@@ -1,0 +1,2 @@
+#!/bin/bash
+prinf "gcc $CFILE -o c"
