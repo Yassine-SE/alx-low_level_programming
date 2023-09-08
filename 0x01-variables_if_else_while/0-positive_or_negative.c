@@ -1,0 +1,24 @@
+#include "stdio.h"
+#include "time.h"
+
+/**
+ * main - Check n if negative or positive
+ *
+ * Description: Using if statement to check n variable
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+		printf("%d is positive\n", n);
+	else if (n < 0)
+		printf("%d is negative\n", n);
+	else
+		printf("%d is zero", n);
+	return (0);
+}
