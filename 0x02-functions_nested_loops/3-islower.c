@@ -1,5 +1,6 @@
 /**
  * _islower - check if lower case
+ * @c: returns value 1 if lower case
  *
  * Return: 0 success
  */
