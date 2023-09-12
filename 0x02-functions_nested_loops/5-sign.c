@@ -2,7 +2,7 @@
 
 /**
  * print_sign - print sign
- * @n: return 
+ * @n: return value
  *
  * Return: 0 success
  */
