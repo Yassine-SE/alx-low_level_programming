@@ -1,6 +1,8 @@
+#include "main.h"
 
 /**
  * _isdigit - check the code
+ * @c: param
  *
  * Return: Always 0.
  */
