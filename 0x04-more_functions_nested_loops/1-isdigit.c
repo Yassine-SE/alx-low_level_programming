@@ -1,6 +1,6 @@
 
 /**
- * main - check the code
+ * _isdigit - check the code
  *
  * Return: Always 0.
  */
