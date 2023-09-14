@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _isupper - is upper
  * @c: param
