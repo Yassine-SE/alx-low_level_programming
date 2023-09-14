@@ -1,8 +1,9 @@
 #include "main.h"
+
 /**
  * _isupper - is upper
  * @c: param
- * 
+ *
  * Return: 0 success
 */
 int _isupper(int c)
