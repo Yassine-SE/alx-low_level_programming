@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 /**
- * print_array -  print array
+ * print_array -  check the code
  * @a: aparam
  * @n: param
+ * 
  * Return: 0 success
  */
 void print_array(int *a, int n)

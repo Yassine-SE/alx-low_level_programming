@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * puts2 - function that prints every other character of a string
- * @str: print other character
- * Return: void
+ * puts2 - check the code
+ * @str: param
+ * 
+ * Return: 0 sucess
  */
 void puts2(char *str)
 {
