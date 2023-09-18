@@ -4,10 +4,8 @@
  * _strcpy - check the code
  * @dest: param
  * @src: param
- * 
  * Return: 0 success
  */
-
 char *_strcpy(char *dest, char *src)
 {
 	int i;
