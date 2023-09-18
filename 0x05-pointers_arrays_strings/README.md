@@ -1,0 +1,1 @@
+this project is for learning pointer and arrays
