@@ -9,7 +9,7 @@
 char *cap_string(char *s)
 {
 	int i;
-	char sep[] = {' ', ',', ';', '.', '"', '?', '!', '(', ')', 
+	char sep[] = {' ', ',', ';', '.', '"', '?', '!', '(', ')',
 	'{', '}', '\n', '\t'};
 
 	for (i = 0; s[i] != '\0'; i++)
@@ -20,7 +20,7 @@ char *cap_string(char *s)
 
 			for (j = 0; sep[j] != '\0'; j++)
 			{
-				if (s[i - 1] == sep[j])
+				if (s[i - 1] == sep[j] || i == 0)
 					s[i] -= 32;
 			}
 		}
