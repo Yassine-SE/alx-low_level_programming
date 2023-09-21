@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - code
+ * _strncpy - check the code
  * @dest: param
  * @src: param
  * @n: param
@@ -16,7 +16,7 @@ char *_strncpy(char *dest, char *src, int n)
 
 	for (i = 0; src[i] != '\0'; i++)
 		lenSrc++;
-	
+
 	for (j = 0; dest[j] != '\0'; j++)
 		lenDest++;
 
@@ -37,7 +37,7 @@ char *_strncpy(char *dest, char *src, int n)
 				destination[m] = '\0';
 				break;
 			}
-		}	
-	}	
+		}
+	}
 	return (destination);
 }
