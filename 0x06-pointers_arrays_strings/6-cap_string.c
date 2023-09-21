@@ -7,7 +7,7 @@
  * Return: 0 success
 */
 char *cap_string(char *s)
-{	
+{
 	int i, cap = 0;
 	char sep[] = {' ', ',', '.', '-', '"', '?', '!', '(', ')', '{', '}', '\n'};
 
