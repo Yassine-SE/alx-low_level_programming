@@ -10,17 +10,14 @@
 */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i, j, m;
-	int lenSrc = 0, lenDest = 0;
+	int i, m;
+	int lenSrc = 0;
 	char *destination = dest;
 
 	for (i = 0; src[i] != '\0'; i++)
 		lenSrc++;
 
-	for (j = 0; dest[j] != '\0'; j++)
-		lenDest++;
-
-	for (m = 0; m < lenDest ; m++)
+	for (m = 0; dest[m] != '\0' ; m++)
 	{
 		if (m <= n && n < lenSrc)
 		{
