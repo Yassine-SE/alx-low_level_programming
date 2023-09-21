@@ -13,7 +13,7 @@ char *leet(char *s)
 	char letter[] = {'a', 'e', 'o', 't', 'l'};
 	int letter_len;
 
-	letter_len = sizeof(letter)/sizeof(char);
+	letter_len = sizeof(letter) / sizeof(char);
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; j < letter_len; j++)
