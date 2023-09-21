@@ -16,6 +16,7 @@ char *_strncpy(char *dest, char *src, int n)
 
 	for (i = 0; src[i] != '\0'; i++)
 		lenSrc++;
+
 	for (m = 0; dest[m] != '\0' ; m++)
 	{
 		if (m <= n && n < lenSrc)
@@ -24,16 +25,10 @@ char *_strncpy(char *dest, char *src, int n)
 				break;
 			destination[m] = src[m];
 		}
-		else if (m <= lenSrc && lenSrc < n)
-		{
-			if (m < lenSrc)
-				destination[m] = src[m];
-			else
-			{
-				destination[m] = '\0';
-				break;
-			}
-		}
+		else if (m < lenSrc && lenSrc < n)
+			destination[m] = src[m];
+		else if (m < n)
+			destination[m] = '\0';
 	}
 	return (destination);
 }
