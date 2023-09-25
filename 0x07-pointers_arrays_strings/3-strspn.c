@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strspn - function
@@ -12,15 +13,21 @@ unsigned int _strspn(char *s, char *accept)
 	int i, j;
 	unsigned int count = 0;
 
-	for (i = 0; accept[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; s[j] != '\0'; j++)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (s[j] == accept[i])
+			if (s[i] == accept[j])
 			{
 				count++;
+				putchar(s[i]);
 				break;
 			}
+			else if (accept[j + 1] == '\0')
+			{
+				return (count);
+			}
+			
 		}
 	}
 	return (count);
