@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	unsigned int num1 = atoi(argv[1]);
 	unsigned int num2 = atoi(argv[2]);
 
-	if (argc > 1 && argv != NULL)
+	if (argc == 3 && argv != NULL)
 	{
 		printf("%d\n", num1 * num2);
 		return (0);
