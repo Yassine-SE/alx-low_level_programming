@@ -2,11 +2,12 @@
 
 /**
  * _puts - check the code
- * @s: param
+ * @dest: param
+ * @src: param
  *
  * Return: Always 0.
  */
-void _puts(char *s)
+char *_strcpy(char *dest, char *src)
 {
-	return;
+	return (0);
 }
