@@ -1,5 +1,6 @@
 #include "main.h"
 #include "stdio.h"
+#include <stdlib.h>
 
 /**
  * main - function
@@ -10,8 +11,8 @@
 */
 int main(int argc, char *argv[])
 {
-	int num1 = (int) argv[1];
-	int num2 = (int) argv[2];
+	unsigned int num1 = atoi(argv[1]);
+	unsigned int num2 = atoi(argv[2]);
 
 	if (argc > 1 && argv != NULL)
 	{
@@ -20,7 +21,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		printf("error\n");
+		printf("Error\n");
 		return (1);
 	}
 }
