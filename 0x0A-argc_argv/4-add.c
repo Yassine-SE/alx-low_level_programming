@@ -1,39 +1,30 @@
-#include "stdio.h"
-#include "stdlib.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - function
  * @argc: param
  * @argv: param
  *
- * Return: 0 success
-*/
+ * Return: 0 Success
+ */
 int main(int argc, char *argv[])
 {
-	int i, add = 0;
+	int i;
+	int add = 0;
 
-	if (argc == 1)
+	for  (i = 1; i < argc; i++)
 	{
-		printf("0\n");
-	}
-	else if (argc > 1)
-	{
-		for (i = 1; i < argc; i++)
+		if (atoi(argv[i]) != 0)
 		{
-			if (atoi(argv[i]) != 0)
-				add = add + atoi(argv[i]);
-			else
-			{
-				printf("Error\n");
-				return (1);
-			}
+			add += atoi(argv[i]);
 		}
-		printf("%d\n", add);
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
 	}
-	else
-	{
-		printf("Error\n");
-		return (1);
-	}
+	printf("%d\n", add);
 	return (0);
 }
