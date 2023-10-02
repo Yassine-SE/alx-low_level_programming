@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * _strlen - check the code
+ * _strchr - check the code
  * @s: param
+ * @c: param
  *
  * Return: Always 0.
  */
-int _strlen(char *s)
+char *_strchr(char *s, char c)
 {
 	return (0);
 }

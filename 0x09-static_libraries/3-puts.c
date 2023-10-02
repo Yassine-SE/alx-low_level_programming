@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _strlen - check the code
+ * _puts - check the code
  * @s: param
  *
  * Return: Always 0.
  */
-int _strlen(char *s)
+void _puts(char *s)
 {
 	return (0);
 }
