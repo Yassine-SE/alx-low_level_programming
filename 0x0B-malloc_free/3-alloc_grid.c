@@ -3,7 +3,7 @@
 
 /**
  * alloc_grid - function
- * @with: param
+ * @width: param
  * @height: param
  *
  * Return: 0 success
@@ -22,7 +22,7 @@ int **alloc_grid(int width, int height)
 
 	for (i = 0; i < height; i++)
 	{
-		dim[i] = malloc(sizeof(int) * width);
+		dim[i] = malloc(sizeof(int *) * width);
 		if (!dim[i])
 		{
 			for (; i >= 0; i--)
