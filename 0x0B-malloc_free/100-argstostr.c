@@ -18,7 +18,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 
 	j = 0;
-	for (i = 1; i < ac; i++)
+	for (i = 0; i < ac; i++)
 	{
 		while (av[i][j] != '\0')
 			j++;
@@ -29,14 +29,14 @@ char *argstostr(int ac, char **av)
 	if (!arr)
 		return (NULL);
 
-	for (b = 1; b < ac; b++)
+	for (b = 0; b < ac; b++)
 	{
 		for (c = 0; av[b][c] != '\0'; c++)
 		{
 			arr[count] = av[b][c];
 			count++;
 		}
-		
+
 		if (arr[count] == '\0')
 			arr[count++] = '\n';
 	}
