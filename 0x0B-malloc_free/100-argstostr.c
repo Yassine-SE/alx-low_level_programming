@@ -23,7 +23,6 @@ char *argstostr(int ac, char **av)
 		while (av[i][j] != '\0')
 			j++;
 	}
-	j = j + ac;
 
 	arr = malloc(sizeof(char) * j + 1);
 	if (!arr)
