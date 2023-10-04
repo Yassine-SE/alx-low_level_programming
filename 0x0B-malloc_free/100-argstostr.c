@@ -20,7 +20,7 @@ char *argstostr(int ac, char **av)
 	j = 0;
 	for (i = 0; i < ac; i++)
 	{
-		while (av[i][j] != '\0')
+		for (j = 0; av[i][j] != '\0'; j++)
 			aloc++;
 	}
 	aloc = aloc + ac;
@@ -31,9 +31,10 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j] != '\0'; j++)
+		for (j = 0; av[i][j]; j++)
 		{
-			arr[count++] = av[i][j];
+			arr[count] = av[i][j];
+			count++;
 		}
 
 		if (arr[count] == '\0')
