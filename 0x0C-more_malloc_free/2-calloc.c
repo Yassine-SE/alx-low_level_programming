@@ -2,7 +2,7 @@
 #include "stdlib.h"
 
 /**
- * _set - function
+ * _memset - function
  * @s: param
  * @c: param
  * @n: param
