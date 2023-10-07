@@ -1,6 +1,25 @@
 #include "main.h"
 #include "stdlib.h"
 
+
+/**
+ * _set - function
+ * @s: param
+ * @c: param
+ * @n: param
+ *
+ * Return: 0 success
+*/
+char *_set(char *s, char c, unsigned int n)
+{
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+		s[i] = c;
+
+	return (s);
+}
+
 /**
  * _calloc - function
  * @nmemb: param
@@ -20,10 +39,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (!arr)
 		return (NULL);
 
-	for (i = 0; i < nmemb; i++)
-	{
-		arr[i] = '0';
-	}
-
+	_set(arr, 0, nmemb);
 	return (arr);
 }
