@@ -29,7 +29,6 @@ char *_set(char *s, char c, unsigned int n)
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *arr;
-	unsigned int i;
 
 	if (nmemb < 1 || size < 1)
 		return (NULL);
