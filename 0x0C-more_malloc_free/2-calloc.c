@@ -33,7 +33,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb < 1 || size < 1)
 		return (NULL);
 
-	arr = malloc(nmemb * size);
+	arr = malloc(size * nmemb);
 	if (!arr)
 		return (NULL);
 
