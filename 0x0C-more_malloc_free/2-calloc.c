@@ -9,7 +9,7 @@
  *
  * Return: 0 success
 */
-char *_set(char *s, char c, unsigned int n)
+char *_memset(char *s, char c, unsigned int n)
 {
 	unsigned int i;
 
