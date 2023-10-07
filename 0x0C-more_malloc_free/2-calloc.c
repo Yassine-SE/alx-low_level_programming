@@ -1,7 +1,6 @@
 #include "main.h"
 #include "stdlib.h"
 
-
 /**
  * _set - function
  * @s: param
