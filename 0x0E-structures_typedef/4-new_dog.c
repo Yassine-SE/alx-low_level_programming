@@ -1,7 +1,5 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include "dog.h"
-
 
 /**
  * _strlen - function
@@ -42,6 +40,8 @@ char *_strcpy(char *dest, char *src)
  * @name: param
  * @age: param
  * @owner: param
+ *
+ * Return: 0 success
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
