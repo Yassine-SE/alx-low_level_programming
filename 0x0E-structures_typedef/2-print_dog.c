@@ -11,6 +11,8 @@ void print_dog(struct dog *d)
 	float age = d->age;
 	char *owner = d->owner;
 
+	if (!d)
+		return;
 	if (name)
 		printf("Name: %s\n", name);
 	else
