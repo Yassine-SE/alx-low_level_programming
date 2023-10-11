@@ -16,21 +16,27 @@ int main(int argc, char *argv[])
 	int result = 0;
 	char *operator;
 
-	if (argc != 3)
-		printf("Error\n");
+	if (argc != 4)
+	{
+		printf("Error 1\n");
 		exit(98);
+	}
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 	operator = argv[2];
 
-	if (!get_op_func(operator) || operator[1] != '\0')
-		printf("Error\n");
+	if (get_op_func(operator) == NULL || operator[1] != '\0')
+	{
+		printf("Error 2\n");
 		exit(99);
+	}
 
 	if ((*operator == '/' && num2 == 0) || (*operator == '%' && num2 == 0))
-		printf("Error\n");
+	{
+		printf("Error 3\n");
 		exit(100);
+	}
 
 	result = get_op_func(operator)(num1, num2);
 	printf("%d\n", result);
