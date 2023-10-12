@@ -3,7 +3,7 @@
 #include <stdarg.h>
 
 /**
- * print_numbers - function
+ * print_strings - function
  * @separator: param
  * @n: param
  * @...: Param
