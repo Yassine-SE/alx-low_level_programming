@@ -3,12 +3,10 @@
 #include <stdarg.h>
 
 /**
- * sum_them_all - function
+ * print_numbers - function
  * @separator: param
  * @n: param
  * @...: Param
- *
- * Return: 0 success
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
