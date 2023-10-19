@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_node - function
+ * add_node_end - function
  * @head: param
  * @str: param
  *
