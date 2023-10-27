@@ -12,12 +12,14 @@ void print_binary(unsigned long int n)
 	int x;
 
 	bit = sizeof(unsigned long int) * 8;
+	x = 0;
 	while (bit)
 	{
-		if (n & 1L << --bit)
+		bit--;
+		if (n & 1L << bit)
 		{
-			x = 1;
 			_putchar('1');
+			x++;
 		}
 		else if (x)
 			_putchar('0');
