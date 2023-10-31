@@ -10,7 +10,7 @@
 int create_file(const char *filename, char *text_content)
 {
 	int file;
-	ssize_t bytes;
+	ssize_t bytes = 0;
 	int len = 0;
 
 	if (!filename)
@@ -23,7 +23,6 @@ int create_file(const char *filename, char *text_content)
 	while (text_content[len] != '\0')
 		len++;
 
-	bytes = 0;
 	if (len)
 		bytes = write(file, text_content, len);
 
@@ -32,4 +31,6 @@ int create_file(const char *filename, char *text_content)
 		return (1);
 	else
 		return (-1);
+
+	return (1);
 }
