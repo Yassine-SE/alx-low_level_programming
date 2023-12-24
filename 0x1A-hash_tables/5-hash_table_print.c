@@ -9,19 +9,19 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	hash_node_t *node;
-	unsigned char comma_flag;
+	unsigned char comma;
 	unsigned long int i;
 
 	if (!ht)
 		return;
 
 	printf("{");
-     comma_flag = 0;
+     comma = 0;
 	for (i = 0; i < ht->size; i++)
 	{
 		if (ht->array[i])
 		{
-			if (comma_flag == 1)
+			if (comma == 1)
 				printf(", ");
 
 			node = ht->array[i];
@@ -32,7 +32,7 @@ void hash_table_print(const hash_table_t *ht)
 				if (node)
 					printf(", ");
 			}
-			comma_flag = 1;
+			comma = 1;
 		}
 	}
 	printf("}\n");
